@@ -2,6 +2,7 @@ import socket
 import json
 import base64
 import os
+import sys
 
 class ChatClient:
     def __init__(self, ip, port):
@@ -344,8 +345,6 @@ class ChatClient:
     
 
 if __name__=="__main__":
-    ip = ""
-    port = ""
     try:
         ip, port = str(sys.argv[1]), int(sys.argv[2])
     except:
